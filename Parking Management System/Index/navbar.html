@@ -1,0 +1,30 @@
+<?php
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+<body>
+<div class="navbar">
+  
+      <a href="home"><img src="./Images/logo.jpg" class="logo"></a>
+      
+      <text class="username">Hello! <?php echo $_SESSION['username'] ?></text>
+   
+
+      <ul>
+        <li><a href="../Bookings/mybookings.php">My Bookings</a></li>
+        <li><a href="../contact/contact.php">Contact us</a></li>
+        <li><a href="./about us.php">About us</a></li>
+        <li><a href="../Login_Register/logout.php">Logout</a></li>
+      </ul>
+    </div>
+    
+</body>
+</html>

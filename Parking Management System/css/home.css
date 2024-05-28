@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner {
+  width: 100%;
+  height: 105%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(Images/home4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.navbar {
+  width: 100%;
+  margin: auto;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  border-radius: 25px;
+}
+
+.logo {
+  width: 120px;
+  cursor: pointer;
+  margin-left: 50px;
+  border-radius: 25px;
+}
+
+.navbar ul li {
+  font-size: 20px;
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #ccdcff;
+}
+
+.navbar ul li a:hover {
+  color: #e6eeff;
+}
+
+.section-book {
+  width: 100%;
+  height: 85vh;
+  /*background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(Images/4.jpeg);*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.book {
+  width: 60%;
+  height: 102%;
+  background-image: linear-gradient(105deg,
+      rgba(255, 255, 255, 0.90) 0%,
+      rgba(255, 255, 255, 0.90) 50%,
+      transparent 50%),
+    url(Images/lot4.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+}
+
+.book__form {
+  width: 50%;
+  padding: 2rem 6rem;
+}
+
+.heading {
+  font-size: 26px;
+  margin-bottom: 3rem;
+  color: #07575b;
+}
+
+.form__group {
+  margin-bottom: 2rem;
+}
+
+.form__group:nth-child(3) {
+  margin-bottom: 5rem;
+}
+
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(196, 223, 230, 0.4);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block;
+  transition: all 0.3s;
+}
+
+.form__input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #07575b;
+  background-color: rgb(196, 223, 230);
+}
+
+.form__input:focus:invalid {
+  border-bottom: 3px solid #db3030;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: grey;
+}
+
+.form__label {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+}
+
+.form__input:placeholder-shown+.form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 4rem;
+  background-color: #07575b;
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:active,
+.btn:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.username {
+  font-size: 19px;
+  color: #080212;
+  background-color: darksalmon;
+  border-radius: 9px;
+  padding: 8px;
+}
+
+.location {
+  font-size: 2rem;
+  text-decoration: none;
+  color: inherit;
+
+
+}
+
+#big {
+  font-size: 1.5rem;
+  
+}
+
+
+#loc:hover {
+  width: 20%;
+  background: #2c2525;
+  box-shadow: 0px 4px 35px -5px #4400ff;
+  color: #fff;
+  border-radius: 10px;
+}
+
+/* }
+.btn:hover{
+  width: 20%;
+  background: #000000;
+  box-shadow: 0px 4px 35px -5px #4400ff;
+}
+.btn{
+  font-size: 18px;
+  font-family: 'Yeon Sung', cursive;
+  padding: 5px;
+  width: 11%;
+  margin: 9px;
+  outline: none;
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  text-shadow: 2px 2px #ff0000;
+} */
+a:link {
+  text-decoration: none;
+  color: #fff;
+}
+
+#loc {
+  padding: 10px;
+}
+#big:hover{
+  text-decoration: underline;
+}
